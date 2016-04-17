@@ -19363,8 +19363,8 @@ process.umask = function() { return 0; };
 
 },{}],166:[function(require,module,exports){
 var React = require('react');
-var ListItem = require('./ListItem.jsx'); //Non npm module
 
+var ListItem = require('./ListItem.jsx'); //Non npm module
 var ingredients = [{ "id": 1, "text": "ham" }, { "id": 2, "text": "cheese" }, { "id": 3, "text": "potatoes" }];
 
 var List = React.createClass({
@@ -19387,6 +19387,7 @@ module.exports = List;
 
 },{"./ListItem.jsx":167,"react":164}],167:[function(require,module,exports){
 var React = require('react');
+
 var ListItem = React.createClass({
 	displayName: 'ListItem',
 
@@ -19407,7 +19408,8 @@ module.exports = ListItem;
 
 },{"react":164}],168:[function(require,module,exports){
 var React = require('react');
-var ReactDOM = require('react-dom');
+var ReactDOM = require('react-dom'); //render to screen
+
 var List = require('./components/List.jsx');
 
 ReactDOM.render(React.createElement(List, null), document.getElementById('ingredients'));
